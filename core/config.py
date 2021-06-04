@@ -4,6 +4,7 @@ from pydantic import BaseSettings
 class Settings(BaseSettings):
     SERVICE_NAME: str = "Find cheap car"
     DEBUG: bool = True
+    DATABASE_URI: str
 
     class Config:
         case_sensitive = True
