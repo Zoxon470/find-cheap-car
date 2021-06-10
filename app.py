@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import ORJSONResponse
 
 from core.config import settings
+from routes import index, cars
 
 app = FastAPI(
     title=settings.SERVICE_NAME,
@@ -24,3 +25,14 @@ async def websocket_endpoint(websocket: WebSocket):
     while True:
         data = await websocket.receive_text()
         await websocket.send_text(f"Message text was: {data}")
+
+
+# routes
+app.include_router(
+    index.router,
+    tags=["index"]
+)
+app.include_router(
+    cars.router,
+    tags=["cars"]
+)
