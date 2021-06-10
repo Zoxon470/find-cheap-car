@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+uvicorn = {extras = ["standard"], version = "*"}
+pydantic = {extras = ["dotenv"], version = "*"}
+faust = "*"
+orjson = "*"
+httpx = "*"
+fastapi = "*"
+parsel = "*"
+websocket-client = "*"
+sqlalchemy = "*"
+asyncpg = "*"
+jinja2 = "*"
+alembic = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
