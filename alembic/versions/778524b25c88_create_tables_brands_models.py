@@ -1823,6 +1823,311 @@ def upgrade():
                 "name": "Rocky",
                 "brand_id": 14
             },
+            {
+                "id": 300,
+                "name": "200SX",
+                "brand_id": 15
+            },
+            {
+                "id": 301,
+                "name": "210",
+                "brand_id": 15
+            },
+            {
+                "id": 302,
+                "name": "280ZX",
+                "brand_id": 15
+            },
+            {
+                "id": 303,
+                "name": "300ZX",
+                "brand_id": 15
+            },
+            {
+                "id": 304,
+                "name": "310",
+                "brand_id": 15
+            },
+            {
+                "id": 305,
+                "name": "510",
+                "brand_id": 15
+            },
+            {
+                "id": 306,
+                "name": "720",
+                "brand_id": 15
+            },
+            {
+                "id": 307,
+                "name": "810",
+                "brand_id": 15
+            },
+            {
+                "id": 308,
+                "name": "Maxima",
+                "brand_id": 15
+            },
+            {
+                "id": 309,
+                "name": "Pickup",
+                "brand_id": 15
+            },
+            {
+                "id": 310,
+                "name": "Pulsar",
+                "brand_id": 15
+            },
+            {
+                "id": 311,
+                "name": "Sentra",
+                "brand_id": 15
+            },
+            {
+                "id": 312,
+                "name": "Stanza",
+                "brand_id": 15
+            },
+            {
+                "id": 313,
+                "name": "DMC-12",
+                "brand_id": 16
+            },
+            {
+                "id": 314,
+                "name": "400",
+                "brand_id": 17
+            },
+            {
+                "id": 315,
+                "name": "600",
+                "brand_id": 17
+            },
+            {
+                "id": 316,
+                "name": "Aries",
+                "brand_id": 17
+            },
+            {
+                "id": 317,
+                "name": "Avenger",
+                "brand_id": 17
+            },
+            {
+                "id": 318,
+                "name": "Caliber",
+                "brand_id": 17
+            },
+            {
+                "id": 319,
+                "name": "Caravan",
+                "brand_id": 17
+            },
+            {
+                "id": 320,
+                "name": "Challenger",
+                "brand_id": 17
+            },
+            {
+                "id": 321,
+                "name": "Charger",
+                "brand_id": 17
+            },
+            {
+                "id": 322,
+                "name": "Colt",
+                "brand_id": 17
+            },
+            {
+                "id": 323,
+                "name": "Conquest",
+                "brand_id": 17
+            },
+            {
+                "id": 324,
+                "name": "D/W Truck",
+                "brand_id": 17
+            },
+            {
+                "id": 325,
+                "name": "Dakota",
+                "brand_id": 17
+            },
+            {
+                "id": 326,
+                "name": "Dart",
+                "brand_id": 17
+            },
+            {
+                "id": 327,
+                "name": "Daytona",
+                "brand_id": 17
+            },
+            {
+                "id": 328,
+                "name": "Diplomat",
+                "brand_id": 17
+            },
+            {
+                "id": 329,
+                "name": "Durango",
+                "brand_id": 17
+            },
+            {
+                "id": 330,
+                "name": "Dynasty",
+                "brand_id": 17
+            },
+            {
+                "id": 331,
+                "name": "Grand Caravan",
+                "brand_id": 17
+            },
+            {
+                "id": 332,
+                "name": "Intrepid",
+                "brand_id": 17
+            },
+            {
+                "id": 333,
+                "name": "Journey",
+                "brand_id": 17
+            },
+            {
+                "id": 334,
+                "name": "Lancer",
+                "brand_id": 17
+            },
+            {
+                "id": 335,
+                "name": "Magnum",
+                "brand_id": 17
+            },
+            {
+                "id": 336,
+                "name": "Mirada",
+                "brand_id": 17
+            },
+            {
+                "id": 337,
+                "name": "Monaco",
+                "brand_id": 17
+            },
+            {
+                "id": 338,
+                "name": "Neon",
+                "brand_id": 17
+            },
+            {
+                "id": 339,
+                "name": "Nitro",
+                "brand_id": 17
+            },
+            {
+                "id": 340,
+                "name": "Omni",
+                "brand_id": 17
+            },
+            {
+                "id": 341,
+                "name": "Raider",
+                "brand_id": 17
+            },
+            {
+                "id": 342,
+                "name": "Ram 1500 Truck",
+                "brand_id": 17
+            },
+            {
+                "id": 343,
+                "name": "Ram 2500 Truck",
+                "brand_id": 17
+            },
+            {
+                "id": 344,
+                "name": "Ram 3500 Truck",
+                "brand_id": 17
+            },
+            {
+                "id": 345,
+                "name": "Ram 4500 Truck",
+                "brand_id": 17
+            },
+            {
+                "id": 346,
+                "name": "Ram 50 Truck",
+                "brand_id": 17
+            },
+            {
+                "id": 347,
+                "name": "RAM C/V",
+                "brand_id": 17
+            },
+            {
+                "id": 348,
+                "name": "Ram SRT-10",
+                "brand_id": 17
+            },
+            {
+                "id": 349,
+                "name": "Ram Van",
+                "brand_id": 17
+            },
+            {
+                "id": 350,
+                "name": "Ram Wagon",
+                "brand_id": 17
+            },
+            {
+                "id": 351,
+                "name": "Ramcharger",
+                "brand_id": 17
+            },
+            {
+                "id": 352,
+                "name": "Rampage",
+                "brand_id": 17
+            },
+            {
+                "id": 353,
+                "name": "Shadow",
+                "brand_id": 17
+            },
+            {
+                "id": 354,
+                "name": "Spirit",
+                "brand_id": 17
+            },
+            {
+                "id": 355,
+                "name": "Sprinter",
+                "brand_id": 17
+            },
+            {
+                "id": 356,
+                "name": "SRT-4",
+                "brand_id": 17
+            },
+            {
+                "id": 357,
+                "name": "St. Regis",
+                "brand_id": 17
+            },
+            {
+                "id": 358,
+                "name": "Stealth",
+                "brand_id": 17
+            },
+            {
+                "id": 359,
+                "name": "Stratus",
+                "brand_id": 17
+            },
+            {
+                "id": 360,
+                "name": "Viper",
+                "brand_id": 17
+            },
         ]
     )
     # ### end Alembic commands ###
