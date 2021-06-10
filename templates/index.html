@@ -19,6 +19,7 @@
     <style>
         body {
             padding-top: 30px;
+            background-color: #333;
         }
 
         .product {
@@ -38,46 +39,19 @@
 </head>
 <body>
 <div class="container">
-    <div class="row" id="search">
-        <form id="search-form" action="" method="POST"
-              enctype="multipart/form-data">
-            <div class="form-group col-xs-9">
-                <input class="form-control" type="text" placeholder="Search"/>
-            </div>
-            <div class="form-group col-xs-3">
-                <button type="submit" class="btn btn-block btn-primary">
-                    Search
-                </button>
-            </div>
-        </form>
-    </div>
     <div class="row" id="filter">
         <form>
-            <div class="form-group col-sm-3 col-xs-6">
-                <select data-filter="brands" class="filter-make filter form-control">
+            <div class="form-group col-sm-6 col-xs-6">
+                <select data-filter="brand" onchange="changeBrandSelect()" id="filter-brand" class="filter form-control">
+                    <option value="">Select Brand</option>
                     {% for brand in brands %}
-                        <option value="">{{ brand.name }}</option>
+                        <option value="{{ brand.id }}">{{ brand.name }}</option>
                     {% endfor %}
                 </select>
             </div>
-            <div class="form-group col-sm-3 col-xs-6">
-                <select data-filter="models" class="filter-model filter form-control">
+            <div class="form-group col-sm-6 col-xs-6">
+                <select data-filter="model" id="filter-model" class="filter form-control">
                     <option value="">Select Model</option>
-                    <option value="">Show All</option>
-                </select>
-            </div>
-            <div class="form-group col-sm-3 col-xs-6">
-                <select data-filter="type"
-                        class="filter-type filter form-control">
-                    <option value="">Select Type</option>
-                    <option value="">Show All</option>
-                </select>
-            </div>
-            <div class="form-group col-sm-3 col-xs-6">
-                <select data-filter="price"
-                        class="filter-price filter form-control">
-                    <option value="">Select Price Range</option>
-                    <option value="">Show All</option>
                 </select>
             </div>
         </form>
@@ -85,6 +59,35 @@
     <div class="row" id="products">
 
     </div>
+
+    <script>
+        const BASE_URL = "http://127.0.0.1:8000";
+        const filterBrandSelect = document.getElementById("filter-brand");
+        const filterModelSelect = document.getElementById("filter-model");
+        const getBrands = () => {
+            const brandID = parseInt(filterBrandSelect[filterBrandSelect.selectedIndex].value);
+            axios.get(`${BASE_URL}/get-models?brand_id=${brandID}`)
+              .then(function (response) {
+                const models = response.data;
+                filterModelSelect.innerText = null;
+                models.map(model => {
+                    const optionElement = document.createElement("option");
+                    optionElement.value = model.id;
+                    optionElement.text = model.name;
+                    filterModelSelect.add(optionElement);
+                });
+
+              })
+              .catch(function (error) {
+                console.log(error);
+              })
+        }
+        const changeBrandSelect = (e) => {
+            getBrands()
+        }
+
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </div>
 </body>
 </html>
