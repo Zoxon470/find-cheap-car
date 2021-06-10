@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <style>
+        body {
+            padding-top: 30px;
+        }
+
+        .product {
+            margin-bottom: 30px;
+        }
+
+        .product-inner {
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            padding: 10px;
+        }
+
+        .product img {
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="row" id="search">
+        <form id="search-form" action="" method="POST"
+              enctype="multipart/form-data">
+            <div class="form-group col-xs-9">
+                <input class="form-control" type="text" placeholder="Search"/>
+            </div>
+            <div class="form-group col-xs-3">
+                <button type="submit" class="btn btn-block btn-primary">
+                    Search
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="row" id="filter">
+        <form>
+            <div class="form-group col-sm-3 col-xs-6">
+                <select data-filter="brands" class="filter-make filter form-control">
+                    {% for brand in brands %}
+                        <option value="">{{ brand.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+                <select data-filter="models" class="filter-model filter form-control">
+                    <option value="">Select Model</option>
+                    <option value="">Show All</option>
+                </select>
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+                <select data-filter="type"
+                        class="filter-type filter form-control">
+                    <option value="">Select Type</option>
+                    <option value="">Show All</option>
+                </select>
+            </div>
+            <div class="form-group col-sm-3 col-xs-6">
+                <select data-filter="price"
+                        class="filter-price filter form-control">
+                    <option value="">Select Price Range</option>
+                    <option value="">Show All</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="row" id="products">
+
+    </div>
+</div>
+</body>
+</html>
