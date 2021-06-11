@@ -2128,6 +2128,471 @@ def upgrade():
                 "name": "Viper",
                 "brand_id": 17
             },
+            {
+                "id": 361,
+                "name": "Medallion",
+                "brand_id": 18
+            },
+            {
+                "id": 362,
+                "name": "Premier",
+                "brand_id": 18
+            },
+            {
+                "id": 363,
+                "name": "Summit",
+                "brand_id": 18
+            },
+            {
+                "id": 364,
+                "name": "Talon",
+                "brand_id": 18
+            },
+            {
+                "id": 365,
+                "name": "Vision",
+                "brand_id": 18
+            },
+            {
+                "id": 366,
+                "name": "308 GTB Quattrovalvole",
+                "brand_id": 19
+            },
+            {
+                "id": 367,
+                "name": "308 GTBI",
+                "brand_id": 19
+            },
+            {
+                "id": 368,
+                "name": "308 GTS Quattrovalvole",
+                "brand_id": 19
+            },
+            {
+                "id": 369,
+                "name": "308 GTSI",
+                "brand_id": 19
+            },
+            {
+                "id": 370,
+                "name": "328 GTB",
+                "brand_id": 19
+            },
+            {
+                "id": 371,
+                "name": "328 GTS",
+                "brand_id": 19
+            },
+            {
+                "id": 372,
+                "name": "348 GTB",
+                "brand_id": 19
+            },
+            {
+                "id": 373,
+                "name": "348 GTS",
+                "brand_id": 19
+            },
+            {
+                "id": 374,
+                "name": "348 Spider",
+                "brand_id": 19
+            },
+            {
+                "id": 375,
+                "name": "348 TB",
+                "brand_id": 19
+            },
+            {
+                "id": 376,
+                "name": "348 TS",
+                "brand_id": 19
+            },
+            {
+                "id": 377,
+                "name": "360",
+                "brand_id": 19
+            },
+            {
+                "id": 378,
+                "name": "456 GT",
+                "brand_id": 19
+            },
+            {
+                "id": 379,
+                "name": "456M GT",
+                "brand_id": 19
+            },
+            {
+                "id": 380,
+                "name": "458 Italia",
+                "brand_id": 19
+            },
+            {
+                "id": 381,
+                "name": "512 BBi",
+                "brand_id": 19
+            },
+            {
+                "id": 382,
+                "name": "512M",
+                "brand_id": 19
+            },
+            {
+                "id": 383,
+                "name": "512TR",
+                "brand_id": 19
+            },
+            {
+                "id": 384,
+                "name": "550 Maranello",
+                "brand_id": 19
+            },
+            {
+                "id": 385,
+                "name": "575M Maranello",
+                "brand_id": 19
+            },
+            {
+                "id": 386,
+                "name": "599 GTB Fiorano",
+                "brand_id": 19
+            },
+            {
+                "id": 387,
+                "name": "599 GTO",
+                "brand_id": 19
+            },
+            {
+                "id": 388,
+                "name": "612 Scaglietti",
+                "brand_id": 19
+            },
+            {
+                "id": 389,
+                "name": "California",
+                "brand_id": 19
+            },
+            {
+                "id": 390,
+                "name": "Enzo",
+                "brand_id": 19
+            },
+            {
+                "id": 391,
+                "name": "F355",
+                "brand_id": 19
+            },
+            {
+                "id": 392,
+                "name": "F40",
+                "brand_id": 19
+            },
+            {
+                "id": 393,
+                "name": "F430",
+                "brand_id": 19
+            },
+            {
+                "id": 394,
+                "name": "F50",
+                "brand_id": 19
+            },
+            {
+                "id": 395,
+                "name": "FF",
+                "brand_id": 19
+            },
+            {
+                "id": 396,
+                "name": "Mondial",
+                "brand_id": 19
+            },
+            {
+                "id": 397,
+                "name": "Testarossa",
+                "brand_id": 19
+            },
+            {
+                "id": 398,
+                "name": "2000 Spider",
+                "brand_id": 20
+            },
+            {
+                "id": 399,
+                "name": "500",
+                "brand_id": 20
+            },
+            {
+                "id": 400,
+                "name": "Bertone X1/9",
+                "brand_id": 20
+            },
+            {
+                "id": 401,
+                "name": "Brava",
+                "brand_id": 20
+            },
+            {
+                "id": 402,
+                "name": "Pininfarina Spider",
+                "brand_id": 20
+            },
+            {
+                "id": 403,
+                "name": "Strada",
+                "brand_id": 20
+            },
+            {
+                "id": 404,
+                "name": "X1/9",
+                "brand_id": 20
+            },
+            {
+                "id": 405,
+                "name": "Karma",
+                "brand_id": 21
+            },
+            {
+                "id": 406,
+                "name": "Aerostar",
+                "brand_id": 22
+            },
+            {
+                "id": 407,
+                "name": "Aspire",
+                "brand_id": 22
+            },
+            {
+                "id": 408,
+                "name": "Bronco",
+                "brand_id": 22
+            },
+            {
+                "id": 409,
+                "name": "Bronco II",
+                "brand_id": 22
+            },
+            {
+                "id": 410,
+                "name": "C-MAX",
+                "brand_id": 22
+            },
+            {
+                "id": 411,
+                "name": "Club Wagon",
+                "brand_id": 22
+            },
+            {
+                "id": 412,
+                "name": "Contour",
+                "brand_id": 22
+            },
+            {
+                "id": 413,
+                "name": "Courier",
+                "brand_id": 22
+            },
+            {
+                "id": 414,
+                "name": "Crown Victoria",
+                "brand_id": 22
+            },
+            {
+                "id": 415,
+                "name": "E-150 and Econoline 150",
+                "brand_id": 22
+            },
+            {
+                "id": 416,
+                "name": "E-250 and Econoline 250",
+                "brand_id": 22
+            },
+            {
+                "id": 417,
+                "name": "E-350 and Econoline 350",
+                "brand_id": 22
+            },
+            {
+                "id": 418,
+                "name": "Edge",
+                "brand_id": 22
+            },
+            {
+                "id": 419,
+                "name": "Escape",
+                "brand_id": 22
+            },
+            {
+                "id": 420,
+                "name": "Escort",
+                "brand_id": 22
+            },
+            {
+                "id": 421,
+                "name": "Excursion",
+                "brand_id": 22
+            },
+            {
+                "id": 422,
+                "name": "EXP",
+                "brand_id": 22
+            },
+            {
+                "id": 423,
+                "name": "Expedition",
+                "brand_id": 22
+            },
+            {
+                "id": 424,
+                "name": "Expedition EL",
+                "brand_id": 22
+            },
+            {
+                "id": 425,
+                "name": "Explorer",
+                "brand_id": 22
+            },
+            {
+                "id": 426,
+                "name": "Explorer Sport Trac",
+                "brand_id": 22
+            },
+            {
+                "id": 427,
+                "name": "F100",
+                "brand_id": 22
+            },
+            {
+                "id": 428,
+                "name": "F150",
+                "brand_id": 22
+            },
+            {
+                "id": 429,
+                "name": "F250",
+                "brand_id": 22
+            },
+            {
+                "id": 430,
+                "name": "F350",
+                "brand_id": 22
+            },
+            {
+                "id": 431,
+                "name": "F450",
+                "brand_id": 22
+            },
+            {
+                "id": 432,
+                "name": "Fairmont",
+                "brand_id": 22
+            },
+            {
+                "id": 433,
+                "name": "Festiva",
+                "brand_id": 22
+            },
+            {
+                "id": 434,
+                "name": "Fiesta",
+                "brand_id": 22
+            },
+            {
+                "id": 435,
+                "name": "Five Hundred",
+                "brand_id": 22
+            },
+            {
+                "id": 436,
+                "name": "Flex",
+                "brand_id": 22
+            },
+            {
+                "id": 437,
+                "name": "Focus",
+                "brand_id": 22
+            },
+            {
+                "id": 438,
+                "name": "Freestar",
+                "brand_id": 22
+            },
+            {
+                "id": 439,
+                "name": "Freestyle",
+                "brand_id": 22
+            },
+            {
+                "id": 440,
+                "name": "Fusion",
+                "brand_id": 22
+            },
+            {
+                "id": 441,
+                "name": "Granada",
+                "brand_id": 22
+            },
+            {
+                "id": 442,
+                "name": "GT",
+                "brand_id": 22
+            },
+            {
+                "id": 443,
+                "name": "LTD",
+                "brand_id": 22
+            },
+            {
+                "id": 444,
+                "name": "Mustang",
+                "brand_id": 22
+            },
+            {
+                "id": 445,
+                "name": "Probe",
+                "brand_id": 22
+            },
+            {
+                "id": 446,
+                "name": "Ranger",
+                "brand_id": 22
+            },
+            {
+                "id": 447,
+                "name": "Taurus",
+                "brand_id": 22
+            },
+            {
+                "id": 448,
+                "name": "Taurus X",
+                "brand_id": 22
+            },
+            {
+                "id": 449,
+                "name": "Tempo",
+                "brand_id": 22
+            },
+            {
+                "id": 450,
+                "name": "Thunderbird",
+                "brand_id": 22
+            },
+            {
+                "id": 451,
+                "name": "Transit Connect",
+                "brand_id": 22
+            },
+            {
+                "id": 452,
+                "name": "Windstar",
+                "brand_id": 22
+            },
+            {
+                "id": 453,
+                "name": "ZX2 Escort",
+                "brand_id": 22
+            },
         ]
     )
     # ### end Alembic commands ###
