@@ -11,6 +11,7 @@ class MashinaKGProvider(AbstractProvider):
         async with httpx.AsyncClient() as client:
             response = await client.get(search_url)
             html = parsel.Selector(text=response.text)
+
             return list(map(lambda x: self.result(
                 url=f"{self.url}{x.xpath('@href').get()}",
                 price=x.css("div > p > strong::text").get(),
