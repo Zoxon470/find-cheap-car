@@ -1,3 +1,5 @@
+from typing import Optional
+
 from pydantic import BaseModel, HttpUrl
 
 
@@ -9,4 +11,4 @@ class Query(BaseModel):
 class SearchResult(BaseModel):
     url: HttpUrl
     price: str
-    image: HttpUrl
+    image: Optional[HttpUrl]
