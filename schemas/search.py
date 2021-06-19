@@ -1,5 +1,12 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, HttpUrl
+
+
+class Query(BaseModel):
+    brand: str
+    model: str
 
 
 class SearchResult(BaseModel):
-    pass
+    url: HttpUrl
+    price: str
+    image: HttpUrl
