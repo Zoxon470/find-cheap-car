@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import ORJSONResponse
 
 from core.config import settings
-from routes import index, cars
+from routes import index, cars, search
 
 app = FastAPI(
     title=settings.SERVICE_NAME,
@@ -35,4 +35,8 @@ app.include_router(
 app.include_router(
     cars.router,
     tags=["cars"]
+)
+app.include_router(
+    search.router,
+    tags=["search"]
 )
