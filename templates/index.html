@@ -41,7 +41,7 @@
 <div class="container">
     <div class="row" id="filter">
         <form>
-            <div class="form-group col-sm-6 col-xs-6">
+            <div class="form-group col-sm-4 col-xs-4">
                 <select data-filter="brand" onchange="changeBrandSelect()" id="filter-brand" class="filter form-control">
                     <option value="">Select Brand</option>
                     {% for brand in brands %}
@@ -49,10 +49,15 @@
                     {% endfor %}
                 </select>
             </div>
-            <div class="form-group col-sm-6 col-xs-6">
+            <div class="form-group col-sm-4 col-xs-4">
                 <select data-filter="model" id="filter-model" class="filter form-control">
                     <option value="">Select Model</option>
                 </select>
+            </div>
+            <div class="form-group col-xs-4">
+                <button type="submit" class="btn btn-block btn-primary">
+                    Search
+                </button>
             </div>
         </form>
     </div>
