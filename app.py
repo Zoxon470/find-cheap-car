@@ -23,8 +23,14 @@ app.add_middleware(
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
     while True:
-        data = await websocket.receive_text()
-        await websocket.send_text(f"Message text was: {data}")
+        await websocket.send_json({
+            "data": {
+                "provider": "https://test.com",
+                "url": "https://turbo.kg/cars/ZxJgMH2E",
+                "price": 7000,
+                "image": "https://turbo.kg/images/005/410/163/b01e38c3a9d0f6b023ce38a843f248d2-standard2x.jpg",
+            }
+        })
 
 
 # routes
