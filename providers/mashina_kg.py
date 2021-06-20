@@ -3,6 +3,7 @@ from typing import Union
 import httpx
 import parsel
 
+from core.utils import get_converted_currency
 from schemas.search import Query
 from .abstract import AbstractProvider
 
@@ -19,12 +20,19 @@ class MashinaKGProvider(AbstractProvider):
             response = await client.get(search_url)
             html = parsel.Selector(text=response.text)
 
-            return list(map(lambda x: self.result(
-                url=f"{self.url}{x.xpath('@href').get()}",
-                price=self.get_validated_price(
-                    x.css("div > p > strong::text").get()
-                ),
-                image=x.css(
-                    ".thumb-item-carousel"
-                )[0].css("img")[0].xpath("@data-src").get()
-            ), html.css(".table-view-list .list-item > a")))
+            cars = []
+            for car in html.css(".table-view-list .list-item > a"):
+                cars.append(self.result(
+                    url=f"{self.url}{car.xpath('@href').get()}",
+                    price=await get_converted_currency(
+                        self.get_validated_price(
+                            car.css("div > p > strong::text").get(),
+                        ),
+                        from_currency="USD",
+                        to_currency="KGS"
+                    ),
+                    image=car.css(
+                        ".thumb-item-carousel"
+                    )[0].css("img")[0].xpath("@data-src").get()
+                ))
+            return cars
