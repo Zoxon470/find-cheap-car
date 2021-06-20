@@ -5,6 +5,8 @@ class Settings(BaseSettings):
     SERVICE_NAME: str = "Find cheap car"
     DEBUG: bool = True
     DATABASE_URI: str
+    REDIS_HOST: str
+    REDIS_PORT: int
 
     class Config:
         case_sensitive = True
