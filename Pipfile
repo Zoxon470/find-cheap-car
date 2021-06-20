@@ -16,6 +16,7 @@ sqlalchemy = "*"
 asyncpg = "*"
 jinja2 = "*"
 alembic = "*"
+aioredis = "==2.0.0a1"
 
 [dev-packages]
 
