@@ -10,5 +10,5 @@ class Query(BaseModel):
 
 class SearchResult(BaseModel):
     url: HttpUrl
-    price: str
+    price: float
     image: Optional[HttpUrl]
