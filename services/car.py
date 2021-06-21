@@ -1,10 +1,10 @@
 from sqlalchemy import select
 
 from models.car import Brand, Model
-from services.base import DBSessionContext
+from services.base import BaseService
 
 
-class BrandService(DBSessionContext):
+class BrandService(BaseService):
     model = Brand
 
     async def get_brand(self, brand_id: int):
@@ -20,7 +20,7 @@ class BrandService(DBSessionContext):
         return result.scalars().all()
 
 
-class ModelService(DBSessionContext):
+class ModelService(BaseService):
     model = Model
 
     async def get_model(self, model_id: int):
