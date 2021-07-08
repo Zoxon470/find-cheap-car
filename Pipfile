@@ -10,7 +10,7 @@ faust = "*"
 orjson = "*"
 httpx = "*"
 fastapi = "*"
-parsel = "*"
+parsel = {extras = ["lxml"], version = "4.6.3"}
 websocket-client = "*"
 sqlalchemy = "*"
 asyncpg = "*"
